@@ -1,0 +1,64 @@
+
+/* заголовки */
+h1
+{
+font-size: 24px;      /* размер шрифта*/
+color: #FF0000;       /* цвет шрифта*/ 
+font-weight: bold;     /* начертание*/ 
+font-family: cursive, sans-serif; /* тип шрифтов*/ 
+text-decoration: underline;     /*  форматирование шрифтов*/ 
+text-align: center;      /* выравнивание*/ 
+}
+
+
+/* форма входа*/
+
+.container{
+ width:300px;  /*Х*/ 
+ height:300px; /*Y*/
+ margin: -260px 0 0 950px; /*отступ */
+ text-align: center; /* позиция текста */
+ background-color: #3adbfd;  /* цвет фона */
+ border: 5px solid red; /* обводка  */
+ border-radius: 5%;  /* скругление */
+ 
+}
+.container img{
+ width:120px; /*Х*/ 
+ height:120px; /*Y*/
+ margin: -60px 0 30px 0; /*отступ */
+ border: 5px solid red;  /* обводка  */
+ border-radius: 50%;     /* скругление */
+ 
+}
+
+input[type="text"],input[type="password"]{
+ width:240px;
+ height:40px;
+ font-size:16px;
+ margin-bottom:15px;
+ padding-left: 15px;
+ border-radius:30px;
+}
+
+.submit {
+ padding: 10px 20px;
+ margin: 5px 0 20px 0;
+ font-size: 18px;
+ color: #fff;
+ background-color: #FF0000;
+ border: none;
+ border-bottom: 4px solid #6ee9fd;
+ cursor: pointer;
+}
+
+
+/* футер*/
+li {
+    display: inline; 
+    margin-right: 50px; 
+    border: 4px solid red; 
+    padding: 20px;
+    border-radius:30px
+   }
+
