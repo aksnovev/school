@@ -1,64 +1,71 @@
-
-/* заголовки */
-h1
-{
-font-size: 24px;      /* размер шрифта*/
-color: #FF0000;       /* цвет шрифта*/ 
-font-weight: bold;     /* начертание*/ 
-font-family: cursive, sans-serif; /* тип шрифтов*/ 
-text-decoration: underline;     /*  форматирование шрифтов*/ 
-text-align: center;      /* выравнивание*/ 
+*{
+	margin: 0;  /* отступы внешние  и внутренние обнуляем */
+    padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+}
+nav {
+	width: 800px;
+	height: 100px;
+	}
+.topnav .icon{
+	display: none;
+}
+.topnav{
+	background-color: #fff;
+	font-size: 16px;
+	margin-top:25px;
+}
+.topnav a{
+color:#000;
+text-align: center;
+padding: 20px 5px;
+font-size: 16px;
 }
 
-
-/* форма входа*/
-
-.container{
- width:300px;  /*Х*/ 
- height:300px; /*Y*/
- margin: -260px 0 0 950px; /*отступ */
- text-align: center; /* позиция текста */
- background-color: #3adbfd;  /* цвет фона */
- border: 5px solid red; /* обводка  */
- border-radius: 5%;  /* скругление */
- 
-}
-.container img{
- width:120px; /*Х*/ 
- height:120px; /*Y*/
- margin: -60px 0 30px 0; /*отступ */
- border: 5px solid red;  /* обводка  */
- border-radius: 50%;     /* скругление */
- 
+.topnav a:hover{
+	background-color: red;
 }
 
-input[type="text"],input[type="password"]{
- width:240px;
- height:40px;
- font-size:16px;
- margin-bottom:15px;
- padding-left: 15px;
- border-radius:30px;
+@media screen and (max-width: 760px){
+	
+.logo {
+	background: #fff;
+	width:100%;
+	display: flex;
+	justify-content: center;
 }
-
-.submit {
- padding: 10px 20px;
- margin: 5px 0 20px 0;
- font-size: 18px;
- color: #fff;
- background-color: #FF0000;
- border: none;
- border-bottom: 4px solid #6ee9fd;
- cursor: pointer;
+	.topnav a:not(:first-child){
+		display:none;
+	}
+	.topnav a.icon{
+		float:right;
+		margin-top:-17px;
+		display:block;
+		color:red;
+	}
+	nav{
+	width: 100%;
+	height: 100px;
 }
-
-
-/* футер*/
-li {
-    display: inline; 
-    margin-right: 50px; 
-    border: 4px solid red; 
-    padding: 20px;
-    border-radius:30px
-   }
-
+.topnav.responsive{
+	position: relative;
+}
+.topnav.responsive a.icon{
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.topnav.responsive a{
+	float:none;
+	display: block;
+	}
+}
